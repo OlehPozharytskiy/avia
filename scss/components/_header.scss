@@ -1,0 +1,21 @@
+.header {
+  width: 900px;
+  height: 100vh;
+  margin: 0 auto;
+
+  &__content {
+    background-color: $c-blue;
+    height: 100%;
+    width: 100%;
+    @media (max-width: 1020px) {
+      background-color: $c-orange;
+    }
+    @include media("<=tablet") {
+      background-color: $c-black;
+    }
+
+    @include media-breakpoint-down(sm) {
+      background-color: yellow;
+    }
+  }
+}
